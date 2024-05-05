@@ -1,0 +1,12 @@
+img {
+  height: 10em;
+}
+.card {
+  background-color: lightgray;
+}
+body {
+  background-color: black;
+}
+.card h5 {
+  background-color: gray;
+}
