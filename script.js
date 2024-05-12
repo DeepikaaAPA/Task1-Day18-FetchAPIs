@@ -19,7 +19,7 @@ function closeDialog() {
 }
 function populateDialog(data, cc, country) {
   //console.log(data, cc);
-  d.innerHTML = `<h4>Exchange Rates  <button class="btn btn-danger mx-2" onclick="closeDialog()">X</button></h4><div class="text-center "><h5>${country} currency:${cc.toUpperCase()}</h5> <h6>INR :${data[
+  d.innerHTML = `<h4>Exchange Rates  <button class="btn btn-danger m-2" onclick="closeDialog()">X</button></h4><div class="text-center "><h5>${country} currency:${cc.toUpperCase()}</h5> <h6>INR :${data[
     cc
   ].inr.toFixed(2)}</h6><h6>AED :${data[cc].aed.toFixed(2)}</h6><h6>USD :${data[
     cc
