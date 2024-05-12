@@ -1,12 +1,23 @@
-img {
-  height: 10em;
-}
 .card {
   background-color: lightgray;
 }
+.card:hover {
+  box-shadow: 2px 2px 5px 2px grey, -2px -2px 5px 2px grey;
+}
+.card-img-top {
+  max-width: 15em;
+  height: 10em;
+}
 body {
-  background-color: black;
+  background-color: rgb(18, 17, 17);
 }
 .card h5 {
-  background-color: gray;
+  background-color: rgb(10, 9, 9);
+  color: white;
+  height: 2em;
+  padding: 5px;
+}
+.card-text {
+  color: rgb(108, 97, 97);
+  font-weight: 200;
 }
