@@ -22,7 +22,7 @@ body {
   font-weight: 200;
 }
 dialog {
-  background-color: rgb(249, 235, 154);
+  background-color: rgb(229, 227, 216, 0.95);
   text-align: right;
   border: none;
   border-radius: 10px;

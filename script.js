@@ -13,7 +13,7 @@ let d = document.createElement("dialog");
 d.style.position = "fixed";
 
 d.style.width = "300px";
-d.style.height = "200px";
+d.style.height = "250px";
 function closeDialog() {
   d.close();
 }
@@ -25,7 +25,7 @@ function populateDialog(data, cc, country) {
     cc
   ].usd.toFixed(2)}</h6><br></div>`;
 }
-function showWeatherDialog(e, cc, country) {
+function showDialog(e, cc, country) {
   let url =
     "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/";
   if (cc) {
@@ -58,7 +58,7 @@ function createCards(countries) {
       <p class="card-text text-center">Capital: ${c.capital?.join()}<br>Region: ${
       c.region
     }<br>Country Code: ${c.altSpellings[0]}</p>
-      <button onclick="showWeatherDialog(event,'${
+      <button onclick="showDialog(event,'${
         c.currencies ? Object.keys(c.currencies)[0].toLowerCase() : null
       }','${c.name.common}')" class="btn btn-primary">Get Exchange Rates 
            
